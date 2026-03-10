@@ -18,3 +18,20 @@ border-radius: 20px;
 font-size: 16px;
 cursor: pointer;
 }
+
+.hearts::before,
+.hearts::after {
+content: "❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
+position: fixed;
+top: -10%;
+left: 0;
+width: 100%;
+font-size: 24px;
+animation: floatHearts 10s linear infinite;
+opacity: 0.6;
+}
+
+@keyframes floatHearts {
+0% { transform: translateY(-10%); }
+100% { transform: translateY(110vh); }
+}
